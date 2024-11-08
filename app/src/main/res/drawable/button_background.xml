@@ -1,0 +1,18 @@
+<!-- res/drawable/button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Dark cyan background color -->
+    <solid android:color="#006064" />
+
+    <!-- Rounded corners -->
+    <corners android:radius="12dp" />
+
+    <!-- Optional lighter cyan border -->
+    <stroke android:width="2dp" android:color="#0097A7" />
+
+    <!-- Padding for inner content -->
+    <padding
+        android:left="16dp"
+        android:top="12dp"
+        android:right="16dp"
+        android:bottom="12dp" />
+</shape>

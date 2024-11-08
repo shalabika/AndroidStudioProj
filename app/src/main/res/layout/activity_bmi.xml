@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FC2C2B2B"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupUnits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioMetric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metric (kg, cm)"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioImperial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imperial (lbs, inches)"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your weight (kg)"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your height (cm)"
+        android:inputType="numberDecimal"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/weightSpinnerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight (lbs)"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/weightSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Title above Height Spinner -->
+    <TextView
+        android:id="@+id/heightSpinnerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Height (inches)"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/heightSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate BMI"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your BMI will appear here"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="32dp"
+        android:gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FF5722"
+        android:padding="16dp"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>
